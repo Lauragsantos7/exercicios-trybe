@@ -56,5 +56,68 @@ if(angulo1 + angulo2 + angulo3 === 180){
 }; 
 console.log(triangulo)
 
+//6. Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+//let peca = peao 
+//switch (peca){
+  //  case 'bispo': console.log('')}
+
+  // 7. Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F//
+    
+    let nota = 55
+    if (nota > 100 || nota < 0){
+        console.log ('Esta nota não é válida.')
+    } else if (nota >= 90){
+        console.log('A')
+    } else if(nota >= 80){
+        console.log('B')
+    }else if(nota >= 70) {
+        console.log('C')
+    } else if (nota >= 60){
+        console.log('D')
+    } else if(nota >= 50){
+        console.log('E')
+    } else
+        console.log('F')
+
+    //8. Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false.//
+
+    const numero1 = 5
+    const numero2 = 30
+    const numero3 = 9
+    let par
+    if (numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0){
+    par = true
+    } else {
+        par = false
+    }
+    console.log(par)
+    // 9 Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false.//
+
+    const numero4 = 52
+    const numero5 = 30
+    const numero6 = 90
+    let impar
+    if (numero4 % 2 === 1 || numero5 % 2 === 1 || numero6 % 2 === 1){
+    impar = true
+    } else {
+        impar = false
+    }
+    console.log(impar)
+
+    //10. Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.//
+    // tente que, sobre o custo do produto, incide um imposto de 20%.
+    //Seu programa também deve emitir uma mensagem de erro e encerrar caso algum dos seus valores de entrada seja menor que zero.
+    //O lucro de um produto é o resultado da subtração do valor de venda pelo custo do mesmo, sendo que o imposto de 20% também faz parte do valor de custo.
+    //valorCustoTotal = valorCusto + impostoSobreOCusto
+    //lucro = valorVenda - valorCustoTotal (lucro de um produto)
+    const custo = 100 
+    const valorVenda = 150
+    custoTotal = custo *1.2
+    if(custoTotal >= 0 && valorVenda >= 0){
+     lucro = (valorVenda-custoTotal) *1000
+    } else lucro = "Valor inválido. Insira um valor positivo."
+    console.log(lucro)
+
+    //12. Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
 
 
