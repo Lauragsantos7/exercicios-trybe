@@ -120,4 +120,30 @@ console.log(triangulo)
 
     //12. Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
 
+    let salario = 6000
+    let aliqINSS = []
+    if(salario > 5189.82){
+        aliqINSS = (salario - 570.88)
+    } else if (salario > 2594.93){
+        aliqINSS = salario - (salario/100*11)
+    } else if  (salario > 1556.95){
+        aliqINSS = salario - (salario/100*9)
+    } else aliqINSS = salario -(salario/100*8)
+    console.log(aliqINSS)
+
+    let aliqIR = []
+    if (salario > 4664.68){
+        aliqIR = (aliqINSS - 869.36)/100*27.5
+    } else if (salario > 3751.06){
+        aliqIR = (aliqINSS - 636.13)/100*22.5
+    } else  if (salario > 2826.66) {
+         aliqIR = (aliqINSS - 354.80)/100*15
+    } else if (salario > 1903.99){
+        aliqIR (aliqINSS- 142.80)/100*7.5
+    } else aliqIR = aliqINSS
+    let salarioLiquido = aliqINSS - aliqIR
+    console.log(salarioLiquido)
+
+
+
 
